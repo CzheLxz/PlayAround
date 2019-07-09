@@ -1,0 +1,10 @@
+com\oauth\dao\SysSmscodeTemplateMapper.class
+com\oauth\entity\AuthShopuser.class
+com\oauth\entity\SysAppauth.class
+com\oauth\entity\SysLog.class
+com\oauth\entity\SysSmscodeTemplate.class
+com\oauth\dao\AuthShopuserMapper.class
+com\oauth\dao\SysLogMapper.class
+com\oauth\entity\SysLoginLog.class
+com\oauth\dao\SysAppauthMapper.class
+com\oauth\dao\SysLoginLogMapper.class

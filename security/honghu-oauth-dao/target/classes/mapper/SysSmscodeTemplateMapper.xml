@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.oauth.dao.SysSmscodeTemplateMapper">
+    <resultMap id="BaseResultMap" type="com.oauth.entity.SysSmscodeTemplate">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="addTime" jdbcType="TIMESTAMP" property="addtime"/>
+        <result column="deleteStatus" jdbcType="BIT" property="deletestatus"/>
+        <result column="info" jdbcType="VARCHAR" property="info"/>
+        <result column="mark" jdbcType="VARCHAR" property="mark"/>
+        <result column="open" jdbcType="BIT" property="open"/>
+        <result column="title" jdbcType="VARCHAR" property="title"/>
+        <result column="type" jdbcType="VARCHAR" property="type"/>
+    </resultMap>
+    <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.oauth.entity.SysSmscodeTemplate">
+        <result column="content" jdbcType="LONGVARCHAR" property="content"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, addTime, deleteStatus, info, mark, open, title, type
+    </sql>
+    <sql id="Blob_Column_List">
+        content
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="ResultMapWithBLOBs">
+        select
+        <include refid="Base_Column_List"/>
+        ,
+        <include refid="Blob_Column_List"/>
+        from sys_smscode_template
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        delete from sys_smscode_template
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" parameterType="com.oauth.entity.SysSmscodeTemplate">
+        insert into sys_smscode_template (id, addTime, deleteStatus,
+        info, mark, open, title,
+        type, content)
+        values (#{id,jdbcType=INTEGER}, #{addtime,jdbcType=TIMESTAMP}, #{deletestatus,jdbcType=BIT},
+        #{info,jdbcType=VARCHAR}, #{mark,jdbcType=VARCHAR}, #{open,jdbcType=BIT}, #{title,jdbcType=VARCHAR},
+        #{type,jdbcType=VARCHAR}, #{content,jdbcType=LONGVARCHAR})
+    </insert>
+    <insert id="insertSelective" parameterType="com.oauth.entity.SysSmscodeTemplate">
+        insert into sys_smscode_template
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="addtime != null">
+                addTime,
+            </if>
+            <if test="deletestatus != null">
+                deleteStatus,
+            </if>
+            <if test="info != null">
+                info,
+            </if>
+            <if test="mark != null">
+                mark,
+            </if>
+            <if test="open != null">
+                open,
+            </if>
+            <if test="title != null">
+                title,
+            </if>
+            <if test="type != null">
+                type,
+            </if>
+            <if test="content != null">
+                content,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="addtime != null">
+                #{addtime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="deletestatus != null">
+                #{deletestatus,jdbcType=BIT},
+            </if>
+            <if test="info != null">
+                #{info,jdbcType=VARCHAR},
+            </if>
+            <if test="mark != null">
+                #{mark,jdbcType=VARCHAR},
+            </if>
+            <if test="open != null">
+                #{open,jdbcType=BIT},
+            </if>
+            <if test="title != null">
+                #{title,jdbcType=VARCHAR},
+            </if>
+            <if test="type != null">
+                #{type,jdbcType=VARCHAR},
+            </if>
+            <if test="content != null">
+                #{content,jdbcType=LONGVARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.oauth.entity.SysSmscodeTemplate">
+        update sys_smscode_template
+        <set>
+            <if test="addtime != null">
+                addTime = #{addtime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="deletestatus != null">
+                deleteStatus = #{deletestatus,jdbcType=BIT},
+            </if>
+            <if test="info != null">
+                info = #{info,jdbcType=VARCHAR},
+            </if>
+            <if test="mark != null">
+                mark = #{mark,jdbcType=VARCHAR},
+            </if>
+            <if test="open != null">
+                open = #{open,jdbcType=BIT},
+            </if>
+            <if test="title != null">
+                title = #{title,jdbcType=VARCHAR},
+            </if>
+            <if test="type != null">
+                type = #{type,jdbcType=VARCHAR},
+            </if>
+            <if test="content != null">
+                content = #{content,jdbcType=LONGVARCHAR},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.oauth.entity.SysSmscodeTemplate">
+        update sys_smscode_template
+        set addTime = #{addtime,jdbcType=TIMESTAMP},
+        deleteStatus = #{deletestatus,jdbcType=BIT},
+        info = #{info,jdbcType=VARCHAR},
+        mark = #{mark,jdbcType=VARCHAR},
+        open = #{open,jdbcType=BIT},
+        title = #{title,jdbcType=VARCHAR},
+        type = #{type,jdbcType=VARCHAR},
+        content = #{content,jdbcType=LONGVARCHAR}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.oauth.entity.SysSmscodeTemplate">
+        update sys_smscode_template
+        set addTime = #{addtime,jdbcType=TIMESTAMP},
+        deleteStatus = #{deletestatus,jdbcType=BIT},
+        info = #{info,jdbcType=VARCHAR},
+        mark = #{mark,jdbcType=VARCHAR},
+        open = #{open,jdbcType=BIT},
+        title = #{title,jdbcType=VARCHAR},
+        type = #{type,jdbcType=VARCHAR}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+</mapper>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="honghu-oauth-dao" />
+        <module name="honghu-oauth-service" />
+        <module name="honghu-oauth-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="honghu-oauth" target="1.8" />
+      <module name="honghu-oauth-api" target="1.8" />
+      <module name="honghu-oauth-dao" target="1.8" />
+      <module name="honghu-oauth-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

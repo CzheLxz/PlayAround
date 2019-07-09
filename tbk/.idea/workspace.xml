@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1e924c56-5851-44fb-be72-db0848bcdb57" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../demo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/czhe/demo/DemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/czhe/demo/Util/Md5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/czhe/demo/controller/PropertiesController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/czhe/demo/controller/ThymeleafController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/czhe/demo/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/czhe/demo/jfreechart/JFreeChartUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/czhe/demo/model/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/czhe/demo/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/czhe/demo/properties/MyProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/czhe/demo/properties/NBA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/czhe/demo/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/czhe/demo/security/JwtToken.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/czhe/demo/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/czhe/demo/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/resources/application-dev.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/test/java/com/czhe/demo/DemoApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-api/honghu-oauth-api.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-dao/honghu-oauth-dao.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-dao/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-dao/src/main/java/com/oauth/dao/AuthShopuserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-dao/src/main/java/com/oauth/dao/AuthShopuserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-dao/src/main/java/com/oauth/dao/SysAppauthMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-dao/src/main/java/com/oauth/dao/SysAppauthMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-dao/src/main/resources/mapper/AuthShopuserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-dao/src/main/resources/mapper/AuthShopuserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-dao/src/main/resources/mapper/SysAppauthMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-dao/src/main/resources/mapper/SysAppauthMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-dao/src/main/resources/mapper/SysLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-dao/src/main/resources/mapper/SysLogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-dao/src/main/resources/mapper/SysLoginLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-dao/src/main/resources/mapper/SysLoginLogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-dao/src/main/resources/mapper/SysSmscodeTemplateMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-dao/src/main/resources/mapper/SysSmscodeTemplateMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/honghu-oauth-service.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/OAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/OAuth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/oauth/GLZInMemoryTokenStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/oauth/GLZInMemoryTokenStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/oauth/GLZRedisTokenStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/oauth/GLZRedisTokenStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/oauth/GLZTokenServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/oauth/GLZTokenServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/oauth/adapter/AuthorizationServerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/oauth/adapter/AuthorizationServerConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/oauth/adapter/GLZDefaultAccessTokenConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/oauth/adapter/GLZDefaultAccessTokenConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/oauth/adapter/GLZTokenGranterProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/oauth/adapter/GLZTokenGranterProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/oauth/aop/SysLogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/oauth/aop/SysLogAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/oauth/exception/handle/GLZOAuth2Exception.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/oauth/exception/handle/GLZOAuth2Exception.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/oauth/exception/handle/GLZOAuth2ExceptionJackson1Serializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/oauth/exception/handle/GLZOAuth2ExceptionJackson1Serializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/oauth/exception/handle/GLZOAuth2ExceptionJackson2Serializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/oauth/exception/handle/GLZOAuth2ExceptionJackson2Serializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/oauth/exception/handle/GLZWebResponseExceptionTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/oauth/exception/handle/GLZWebResponseExceptionTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/oauth/filters/TokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/oauth/filters/TokenFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/oauth/services/GLZClientDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/oauth/services/GLZClientDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/oauth/services/GLZUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/oauth/services/GLZUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/resource/ResourceProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/resource/ResourceProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/resource/adapter/ResourceServerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/resource/adapter/ResourceServerConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/resource/exception/handle/AuthExceptionEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/resource/exception/handle/AuthExceptionEntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/resource/exception/handle/CustomAccessDeniedHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/resource/exception/handle/CustomAccessDeniedHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/security/MD5PasswordEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/security/MD5PasswordEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/security/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/service/AuthShopuserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/service/AuthShopuserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/service/impl/AuthShopuserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/service/impl/AuthShopuserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/service/impl/SysAppauthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/service/impl/SysAppauthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/utils/Md5Encrypt.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/utils/Md5Encrypt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/utils/ResponseCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/utils/ResponseCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/utils/ResponseResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/utils/ResponseResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/utils/TokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/utils/TokenUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/utils/VerifyUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/honghu-oauth-service/src/main/java/com/glz/authentication/utils/VerifyUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/honghu-oauth.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../security/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/controller/BleftMenuConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/controller/BleftMenuConfigController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/controller/BphotoConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/controller/BphotoConfigController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/controller/BshopConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/controller/BshopConfigController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/controller/BtopMenuConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/controller/BtopMenuConfigController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/controller/BuserConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/controller/BuserConfigController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/controller/BuserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/controller/BuserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/controller/HomePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/controller/HomePageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/entity/BfriendLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/entity/BfriendLink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/entity/BleftMenuConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/entity/BleftMenuConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/entity/BphotoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/entity/BphotoConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/entity/BshopConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/entity/BshopConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/entity/BtopMenuConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/entity/BtopMenuConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/entity/Buser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/entity/Buser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/entity/BuserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/entity/BuserConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/pojo/RequestObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/pojo/RequestObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/pojo/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/pojo/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/pojo/ResultCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/pojo/ResultCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/repository/BfriendLinkRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/repository/BfriendLinkRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/repository/BleftMenuConfigRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/repository/BleftMenuConfigRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/repository/BphotoConfigRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/repository/BphotoConfigRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/repository/BshopConfigRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/repository/BshopConfigRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/repository/BtopMenuConfigRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/repository/BtopMenuConfigRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/repository/BuserConfigRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/repository/BuserConfigRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/repository/BuserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/repository/BuserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/schedule/Jobs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/schedule/Jobs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/service/TbkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/service/TbkService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/service/impl/TbkApiServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/service/impl/TbkApiServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/util/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hairuo/tbk/util/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbk.iml" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/classes/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\apache-maven-3.6.1\Repository" />
+        <option name="mavenHome" value="D:/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="1.8" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/encodings.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-402" />
+    <option name="y" value="273" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="tbk" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hairuo.tbk.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1e924c56-5851-44fb-be72-db0848bcdb57" name="Default Changelist" comment="" />
+      <created>1561099411710</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561099411710</updated>
+      <workItem from="1561099415246" duration="92000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="92000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Web" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
