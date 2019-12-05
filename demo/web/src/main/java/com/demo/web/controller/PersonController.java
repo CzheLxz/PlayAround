@@ -7,6 +7,7 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.UUID;
 
 /**
@@ -15,7 +16,7 @@ import java.util.UUID;
  * @create 2019/8/23 15:38
  * @description
  **/
-@Api(tags = "职员接口")
+@Api(tags = "人员接口")
 @RequestMapping("/person")
 @RestController
 public class PersonController {
@@ -23,16 +24,16 @@ public class PersonController {
     @Autowired
     private PersonService personService;
 
-    @ApiOperation("新增")
-    @PostMapping("/sava")
-    public String sava(Person person){
+    @ApiOperation("新增人员")
+    @PostMapping("/savePerson")
+    public String savePerson(@Valid @RequestBody Person person) {
         person.setId(UUID.randomUUID().toString().replaceAll("-", ""));
-        return  personService.insert(person) > 0 ? "true":"false";
+        return personService.insert(person) > 0 ? "true" : "false";
     }
 
-    @ApiOperation("查询")
-    @GetMapping("/findAll")
-    public Object findAll(){
-        return personService.findAll();
+    @ApiOperation(value = "查询", notes = "分页查询")
+    @GetMapping("/findAllPerson/{page}/{size}")
+    public Object findAllPerson(@PathVariable int page, @PathVariable int size) {
+        return personService.findAllPerson(page, size);
     }
 }

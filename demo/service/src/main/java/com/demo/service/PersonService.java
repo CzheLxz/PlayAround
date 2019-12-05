@@ -1,12 +1,12 @@
 package com.demo.service;
 
 import com.demo.dao.entity.Person;
+import com.github.pagehelper.PageInfo;
 
-import java.util.List;
 
 public interface PersonService {
 
     int insert(Person person);
 
-    List<Person> findAll();
+    PageInfo<Person> findAllPerson(int page, int size);
 }

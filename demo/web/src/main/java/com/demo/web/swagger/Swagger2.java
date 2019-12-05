@@ -31,8 +31,8 @@ public class Swagger2 {
     }
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("demo Api")
-                .description("由Swagger生成的接口文档")
+                .title("API")
+                .description("Project demo interface")
                 .termsOfServiceUrl("")
                 .version("1.0")
                 .build();

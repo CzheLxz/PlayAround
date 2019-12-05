@@ -3,6 +3,8 @@ package com.demo.service.impl;
 import com.demo.dao.entity.Person;
 import com.demo.dao.mapper.PersonDao;
 import com.demo.service.PersonService;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -26,7 +28,10 @@ public class PersonServiceImpl implements PersonService {
     }
 
     @Override
-    public List<Person> findAll() {
-        return personDao.findAll();
+    public PageInfo<Person> findAllPerson(int page, int size) {
+        PageHelper.startPage(page,size);
+        List<Person> personList = personDao.findAll();
+        PageInfo result = new PageInfo(personList);
+        return result;
     }
 }
