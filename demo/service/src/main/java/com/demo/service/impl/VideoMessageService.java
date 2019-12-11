@@ -1,6 +1,6 @@
 package com.demo.service.impl;
 
-import com.demo.aspect.MsgTypeHandler;
+import com.demo.annotation.MsgTypeHandler;
 import com.demo.dao.entity.MSG_TYPE;
 import com.demo.dao.entity.MessageInfo;
 import com.demo.service.MessageService;

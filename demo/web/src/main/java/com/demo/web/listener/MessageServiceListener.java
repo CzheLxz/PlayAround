@@ -1,6 +1,6 @@
 package com.demo.web.listener;
 
-import com.demo.aspect.MsgTypeHandler;
+import com.demo.annotation.MsgTypeHandler;
 import com.demo.service.MessageService;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;

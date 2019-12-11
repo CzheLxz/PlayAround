@@ -1,4 +1,4 @@
-package com.demo.aspect;
+package com.demo.annotation;
 
 import com.demo.dao.entity.MSG_TYPE;
 
