@@ -34,20 +34,20 @@ public class DataSourceAspect {
     }
 
     @Before("aspect()")
-    public void before(JoinPoint point) throws ClassNotFoundException { //在指定切点的方法之前执行
-        String classType = point.getTarget().getClass().getName();
+    public void before(JoinPoint point) { //在指定切点的方法之前执行
+        String className = point.getTarget().getClass().getName();
         String method = point.getSignature().getName();
         String args = StringUtils.join(point.getArgs(), ",");
-        logger.info(">>>>>>> classType:{},method:{},args:{}", classType, method, args);
+        logger.info(">>>>>>> className:{},method:{},args:{}", className, method, args);
         try {
             for (DatabaseType type : DatabaseType.values()) {
                 List<String> values = DynamicDataSource.METHOD_TYPE_MAP.get(type);
                 values.forEach(value -> {
                     if (method.startsWith(value)) {
-                        logger.info(">>>>>>>{} 方法的操作类型为:{}", method, value);
+                        logger.info(">>>>>>>{} 方法开头包含的单词为:{}", method, value);
                         DatabaseContextHolder.setDatabaseType(type);
                         DatabaseType types = DatabaseContextHolder.getContextHolder();
-                        logger.info(">>>>>>>{} 方法使用的数据源为:{}", method, types);
+                        logger.info(">>>>>>>{} 方法使用的数据源为: {}", method, types);
                     }
                 });
             }
