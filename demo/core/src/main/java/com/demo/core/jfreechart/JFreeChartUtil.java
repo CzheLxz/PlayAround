@@ -29,9 +29,9 @@ public class JFreeChartUtil {
     public static void main(String[] args) {
         // 步骤1：创建CategoryDataset对象（准备数据）
         CategoryDataset dataset = createDataset();
-        // 步骤2：根据Dataset 生成JFreeChart对象，以及做相应的设置
+        // 步骤2：根据Dataset 生成JFreeChart对象,以及做相应的设置
         JFreeChart freeChart = createChart(dataset);
-        // 步骤3：将JFreeChart对象输出到文件，Servlet输出流等
+        // 步骤3：将JFreeChart对象输出到文件,Servlet输出流等
         saveAsFile(freeChart, "D:\\Img\\jfree.jpg", 700, 400);
     }
 
@@ -68,8 +68,8 @@ public class JFreeChartUtil {
     public static JFreeChart createChart(CategoryDataset categoryDataset) {
         // 创建JFreeChart对象：ChartFactory.createLineChart
         JFreeChart jfreechart = ChartFactory.createLineChart("model", // 标题
-                "time", // categoryAxisLabel （category轴，横轴，X轴标签）
-                "Quantity", // valueAxisLabel（value轴，纵轴，Y轴的标签）
+                "time", // categoryAxisLabel （category轴,横轴,X轴标签）
+                "Quantity", // valueAxisLabel（value轴,纵轴,Y轴的标签）
                 categoryDataset, // dataset
                 PlotOrientation.VERTICAL, true, // legend
                 false, // tooltips

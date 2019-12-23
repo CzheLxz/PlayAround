@@ -1,0 +1,14 @@
+2019-12-11 15:35:49.668  INFO 13984 --- [main] com.demo.web.WebApplication              : Starting WebApplication on DESKTOP-AALMDPP with PID 13984 (E:\study\demo\web\target\classes started by lyods in E:\study\demo)
+2019-12-11 15:35:49.671  INFO 13984 --- [main] com.demo.web.WebApplication              : The following profiles are active: dev
+2019-12-11 15:35:51.500  INFO 13984 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9792cfc1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-11 15:35:51.899  INFO 13984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2019-12-11 15:35:51.920  INFO 13984 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-11 15:35:51.921  INFO 13984 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-12-11 15:35:52.037  INFO 13984 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2019-12-11 15:35:52.037  INFO 13984 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2304 ms
+2019-12-11 15:35:52.924  INFO 13984 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-11 15:35:53.164  INFO 13984 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-12-11 15:35:53.180  INFO 13984 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-11 15:35:53.194  INFO 13984 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-12-11 15:35:53.362  INFO 13984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path '/demo'
+2019-12-11 15:35:53.365  INFO 13984 --- [main] com.demo.web.WebApplication              : Started WebApplication in 4.36 seconds (JVM running for 5.343)
