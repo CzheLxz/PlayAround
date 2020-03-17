@@ -1,0 +1,10 @@
+2019-12-11 15:31:49.769  INFO 12760 --- [main] TestApplication                          : Starting TestApplication on DESKTOP-AALMDPP with PID 12760 (started by lyods in E:\study\demo\web)
+2019-12-11 15:31:49.771  INFO 12760 --- [main] TestApplication                          : The following profiles are active: dev
+2019-12-11 15:31:52.097  INFO 12760 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$df8ac6cd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-11 15:31:55.352  INFO 12760 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-11 15:31:56.152  INFO 12760 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-12-11 15:31:56.192  INFO 12760 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-11 15:31:56.211  INFO 12760 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-12-11 15:31:56.485  INFO 12760 --- [main] TestApplication                          : Started TestApplication in 7.394 seconds (JVM running for 9.418)
+2019-12-11 15:31:57.144  INFO 12760 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-11 15:31:57.158  INFO 12760 --- [Thread-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...

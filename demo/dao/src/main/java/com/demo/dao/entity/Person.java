@@ -1,8 +1,11 @@
 package com.demo.dao.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
-import javax.validation.constraints.*;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotBlank;
 
 /**
  * @author czhe
@@ -10,6 +13,7 @@ import javax.validation.constraints.*;
  * @create 2019/8/23 15:28
  * @description
  **/
+@AllArgsConstructor
 @Data
 public class Person {
 

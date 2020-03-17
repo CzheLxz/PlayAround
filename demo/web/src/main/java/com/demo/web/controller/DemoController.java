@@ -1,8 +1,7 @@
 package com.demo.web.controller;
 
-import io.swagger.annotations.*;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import io.swagger.annotations.Api;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.text.NumberFormat;
 
@@ -24,6 +23,7 @@ public class DemoController {
         System.out.println("从数组中取2位数组合不重复的总数:" + combinationArray(array, 3));*/
 
         System.out.println("两颗骰子摇两次至少出现一个一点的概率为:" + random(2, 2)+"%");
+
     }
 
     /**
