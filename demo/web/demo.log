@@ -1,10 +1,180 @@
-2019-12-11 15:31:49.769  INFO 12760 --- [main] TestApplication                          : Starting TestApplication on DESKTOP-AALMDPP with PID 12760 (started by lyods in E:\study\demo\web)
-2019-12-11 15:31:49.771  INFO 12760 --- [main] TestApplication                          : The following profiles are active: dev
-2019-12-11 15:31:52.097  INFO 12760 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$df8ac6cd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-11 15:31:55.352  INFO 12760 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-12-11 15:31:56.152  INFO 12760 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-12-11 15:31:56.192  INFO 12760 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-12-11 15:31:56.211  INFO 12760 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-12-11 15:31:56.485  INFO 12760 --- [main] TestApplication                          : Started TestApplication in 7.394 seconds (JVM running for 9.418)
-2019-12-11 15:31:57.144  INFO 12760 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-12-11 15:31:57.158  INFO 12760 --- [Thread-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-04-08 14:16:49.309  INFO 9864 --- [main] TestApplication                          : Starting TestApplication on DESKTOP-AALMDPP with PID 9864 (started by lyods in E:\study\demo\web)
+2020-04-08 14:16:49.312  INFO 9864 --- [main] TestApplication                          : The following profiles are active: dev
+2020-04-08 14:16:51.643  INFO 9864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-08 14:16:51.649  INFO 9864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-08 14:16:51.687  INFO 9864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+2020-04-08 14:16:52.266  INFO 9864 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ac4dad47] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-08 14:16:55.658  INFO 9864 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-08 14:16:56.527  INFO 9864 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-04-08 14:16:56.555  INFO 9864 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-04-08 14:16:56.581  INFO 9864 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-04-08 14:16:56.832  INFO 9864 --- [main] TestApplication                          : Started TestApplication in 8.99 seconds (JVM running for 10.225)
+2020-04-08 14:16:57.444  INFO 9864 --- [pool-1-thread-32] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-04-08 14:16:57.447  INFO 9864 --- [pool-1-thread-32] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-04-08 14:19:04.687  INFO 9864 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-08 14:19:07.533  INFO 9864 --- [Thread-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-04-08 14:19:19.770  INFO 14356 --- [main] TestApplication                          : Starting TestApplication on DESKTOP-AALMDPP with PID 14356 (started by lyods in E:\study\demo\web)
+2020-04-08 14:19:19.771  INFO 14356 --- [main] TestApplication                          : The following profiles are active: dev
+2020-04-08 14:19:21.611  INFO 14356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-08 14:19:21.615  INFO 14356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-08 14:19:21.668  INFO 14356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 repository interfaces.
+2020-04-08 14:19:22.249  INFO 14356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ac721e87] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-08 14:19:25.521  INFO 14356 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-08 14:19:26.313  INFO 14356 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-04-08 14:19:26.350  INFO 14356 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-04-08 14:19:26.373  INFO 14356 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-04-08 14:19:26.605  INFO 14356 --- [main] TestApplication                          : Started TestApplication in 8.044 seconds (JVM running for 9.29)
+2020-04-08 14:19:27.166  INFO 14356 --- [pool-1-thread-4] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-04-08 14:19:27.169  INFO 14356 --- [pool-1-thread-4] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-04-08 14:19:31.929  INFO 14356 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-08 14:19:34.108  INFO 14356 --- [Thread-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-04-08 14:36:03.752  INFO 16288 --- [main] TestApplication                          : Starting TestApplication on DESKTOP-AALMDPP with PID 16288 (started by lyods in E:\study\demo\web)
+2020-04-08 14:36:03.753  INFO 16288 --- [main] TestApplication                          : The following profiles are active: dev
+2020-04-08 14:36:05.937  INFO 16288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-08 14:36:05.945  INFO 16288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-08 14:36:06.038  INFO 16288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32ms. Found 0 repository interfaces.
+2020-04-08 14:36:06.764  INFO 16288 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5dd686c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-08 14:36:10.590  INFO 16288 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-08 14:36:11.504  INFO 16288 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-04-08 14:36:11.534  INFO 16288 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-04-08 14:36:11.554  INFO 16288 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-04-08 14:36:11.842  INFO 16288 --- [main] TestApplication                          : Started TestApplication in 9.108 seconds (JVM running for 10.394)
+2020-04-08 14:36:12.405  INFO 16288 --- [pool-1-thread-503] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-04-08 14:36:12.407  INFO 16288 --- [pool-1-thread-503] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-04-08 14:36:13.548  INFO 16288 --- [main] TestApplication                          : 字符串缓存结果 - v1
+2020-04-08 14:36:13.678  INFO 16288 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-08 14:36:14.843  INFO 16288 --- [Thread-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-04-08 14:37:19.726  INFO 13204 --- [main] TestApplication                          : Starting TestApplication on DESKTOP-AALMDPP with PID 13204 (started by lyods in E:\study\demo\web)
+2020-04-08 14:37:19.727  INFO 13204 --- [main] TestApplication                          : The following profiles are active: dev
+2020-04-08 14:37:22.105  INFO 13204 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-08 14:37:22.111  INFO 13204 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-08 14:37:22.194  INFO 13204 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36ms. Found 0 repository interfaces.
+2020-04-08 14:37:23.015  INFO 13204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$375c196a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-08 14:37:27.040  INFO 13204 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-08 14:37:28.122  INFO 13204 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-04-08 14:37:28.172  INFO 13204 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-04-08 14:37:28.206  INFO 13204 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-04-08 14:37:28.663  INFO 13204 --- [main] TestApplication                          : Started TestApplication in 10.198 seconds (JVM running for 11.88)
+2020-04-08 14:37:29.433  INFO 13204 --- [pool-1-thread-31] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-04-08 14:37:29.436  INFO 13204 --- [pool-1-thread-31] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-04-08 14:37:30.752  INFO 13204 --- [main] TestApplication                          : [字符缓存结果] - [v1]
+2020-04-08 14:37:30.887  INFO 13204 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-08 14:37:32.071  INFO 13204 --- [Thread-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-04-08 14:42:16.355  INFO 9372 --- [main] TestApplication                          : Starting TestApplication on DESKTOP-AALMDPP with PID 9372 (started by lyods in E:\study\demo\web)
+2020-04-08 14:42:16.356  INFO 9372 --- [main] TestApplication                          : The following profiles are active: dev
+2020-04-08 14:42:19.109  INFO 9372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-08 14:42:19.116  INFO 9372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-08 14:42:19.170  INFO 9372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26ms. Found 0 repository interfaces.
+2020-04-08 14:42:19.858  INFO 9372 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a70389ec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-08 14:42:24.222  INFO 9372 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-08 14:42:25.108  INFO 9372 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-04-08 14:42:25.141  INFO 9372 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-04-08 14:42:25.167  INFO 9372 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-04-08 14:42:25.440  INFO 9372 --- [main] TestApplication                          : Started TestApplication in 10.913 seconds (JVM running for 12.569)
+2020-04-08 14:42:26.147  INFO 9372 --- [pool-1-thread-5] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-04-08 14:42:26.150  INFO 9372 --- [pool-1-thread-5] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-04-08 14:42:27.422  INFO 9372 --- [main] TestApplication                          : 字符串缓存结果 - v1
+2020-04-08 14:42:27.449  INFO 9372 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-08 14:42:28.611  INFO 9372 --- [Thread-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-04-08 14:46:01.125  INFO 12416 --- [main] TestApplication                          : Starting TestApplication on DESKTOP-AALMDPP with PID 12416 (started by lyods in E:\study\demo\web)
+2020-04-08 14:46:01.126  INFO 12416 --- [main] TestApplication                          : The following profiles are active: dev
+2020-04-08 14:46:02.785  INFO 12416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-08 14:46:02.790  INFO 12416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-08 14:46:02.837  INFO 12416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26ms. Found 0 repository interfaces.
+2020-04-08 14:46:03.403  INFO 12416 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d2d99a1f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-08 14:46:07.014  INFO 12416 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-08 14:46:07.996  INFO 12416 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-04-08 14:46:08.032  INFO 12416 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-04-08 14:46:08.055  INFO 12416 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-04-08 14:46:08.317  INFO 12416 --- [main] TestApplication                          : Started TestApplication in 8.393 seconds (JVM running for 9.625)
+2020-04-08 14:46:08.377 ERROR 12416 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4f209819] to prepare test instance [TestApplication@21090c88]
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'TestApplication': Unsatisfied dependency expressed through field 'redisCacheTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.core.RedisTemplate<java.lang.String, java.io.Serializable>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:391) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119) ~[spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43) ~[spring-boot-test-autoconfigure-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) [junit-rt.jar:na]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.core.RedisTemplate<java.lang.String, java.io.Serializable>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1658) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1217) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	... 28 common frames omitted
+
+2020-04-08 14:46:08.397  INFO 12416 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-08 14:46:08.426  INFO 12416 --- [Thread-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-04-08 14:53:28.622  INFO 6124 --- [main] TestApplication                          : Starting TestApplication on DESKTOP-AALMDPP with PID 6124 (started by lyods in E:\study\demo\web)
+2020-04-08 14:53:28.624  INFO 6124 --- [main] TestApplication                          : The following profiles are active: dev
+2020-04-08 14:53:30.885  INFO 6124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-08 14:53:30.890  INFO 6124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-08 14:53:30.936  INFO 6124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+2020-04-08 14:53:31.532  INFO 6124 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9368e4d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-08 14:53:35.035  INFO 6124 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-08 14:53:35.904  INFO 6124 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-04-08 14:53:35.932  INFO 6124 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-04-08 14:53:35.953  INFO 6124 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-04-08 14:53:36.215  INFO 6124 --- [main] TestApplication                          : Started TestApplication in 8.948 seconds (JVM running for 10.157)
+2020-04-08 14:53:36.656  INFO 6124 --- [pool-1-thread-48] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-04-08 14:53:36.658  INFO 6124 --- [pool-1-thread-48] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-04-08 14:53:37.308  INFO 6124 --- [main] TestApplication                          : 字符串缓存结果 - v1
+2020-04-08 14:53:37.664  INFO 6124 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-08 14:53:38.794  INFO 6124 --- [Thread-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-04-08 14:57:18.560  INFO 13916 --- [main] TestApplication                          : Starting TestApplication on DESKTOP-AALMDPP with PID 13916 (started by lyods in E:\study\demo\web)
+2020-04-08 14:57:18.561  INFO 13916 --- [main] TestApplication                          : The following profiles are active: dev
+2020-04-08 14:57:20.869  INFO 13916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-08 14:57:20.875  INFO 13916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-08 14:57:20.926  INFO 13916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 repository interfaces.
+2020-04-08 14:57:21.637  INFO 13916 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5dd686c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-08 14:57:26.589  INFO 13916 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-08 14:57:27.759  INFO 13916 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-04-08 14:57:27.795  INFO 13916 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-04-08 14:57:27.823  INFO 13916 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-04-08 14:57:28.099  INFO 13916 --- [main] TestApplication                          : Started TestApplication in 10.919 seconds (JVM running for 12.319)
+2020-04-08 14:57:28.680  INFO 13916 --- [pool-1-thread-42] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-04-08 14:57:28.684  INFO 13916 --- [pool-1-thread-42] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-04-08 14:57:29.495  INFO 13916 --- [main] TestApplication                          : 字符串缓存结果 - v1
+2020-04-08 14:57:29.624  INFO 13916 --- [main] TestApplication                          : 对象缓存结果 - User(id=1, username=czhe, password=123456, roleName=admin, locked=false)
+2020-04-08 14:57:29.640  INFO 13916 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-08 14:57:30.799  INFO 13916 --- [Thread-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-04-08 14:58:49.607  INFO 16260 --- [main] TestApplication                          : Starting TestApplication on DESKTOP-AALMDPP with PID 16260 (started by lyods in E:\study\demo\web)
+2020-04-08 14:58:49.609  INFO 16260 --- [main] TestApplication                          : The following profiles are active: dev
+2020-04-08 14:58:51.758  INFO 16260 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-08 14:58:51.764  INFO 16260 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-08 14:58:51.816  INFO 16260 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27ms. Found 0 repository interfaces.
+2020-04-08 14:58:52.454  INFO 16260 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d0f4df78] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-08 14:58:55.860  INFO 16260 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-08 14:58:56.741  INFO 16260 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-04-08 14:58:56.777  INFO 16260 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-04-08 14:58:56.798  INFO 16260 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-04-08 14:58:57.101  INFO 16260 --- [main] TestApplication                          : Started TestApplication in 8.612 seconds (JVM running for 9.885)
+2020-04-08 14:58:57.618  INFO 16260 --- [pool-1-thread-18] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-04-08 14:58:57.620  INFO 16260 --- [pool-1-thread-18] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-04-08 14:58:58.226  INFO 16260 --- [main] TestApplication                          : 字符串缓存结果 - v1
+2020-04-08 14:58:58.457  INFO 16260 --- [main] TestApplication                          : 对象缓存结果 - User(id=1, username=czhe, password=123456, roleName=admin, locked=false)
+2020-04-08 14:58:58.469  INFO 16260 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-08 14:58:59.618  INFO 16260 --- [Thread-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...

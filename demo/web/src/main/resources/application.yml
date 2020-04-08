@@ -5,4 +5,8 @@ spring:
 logging:
   path: /
   file: demo.log
+  level:
+    com:
+      demo:
+        dao: debug
   #swagger地址: localhost:8090/demo/swagger-ui.html#

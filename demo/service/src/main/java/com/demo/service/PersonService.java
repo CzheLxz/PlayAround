@@ -9,4 +9,6 @@ public interface PersonService {
     int insert(Person person);
 
     PageInfo<Person> findAllPerson(int page, int size);
+
+    int delete(String id);
 }

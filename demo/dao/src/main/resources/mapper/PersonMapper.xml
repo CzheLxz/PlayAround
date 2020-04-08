@@ -10,4 +10,7 @@
     SELECT * FROM person
     </select>
 
+    <delete id="delete" parameterType="java.lang.String">
+    DELETE FROM person WHERE id = #{id}
+    </delete>
 </mapper>

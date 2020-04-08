@@ -26,14 +26,21 @@ public class PersonController {
 
     @ApiOperation("新增人员")
     @PostMapping("/savePerson")
-    public String savePerson(@Valid @RequestBody Person person) {
+    public Object savePerson(@Valid @RequestBody Person person) {
         person.setId(UUID.randomUUID().toString().replaceAll("-", ""));
-        return personService.insert(person) > 0 ? "true" : "false";
+        return personService.insert(person);
     }
 
     @ApiOperation(value = "查询", notes = "分页查询")
     @GetMapping("/findAllPerson/{page}/{size}")
     public Object findAllPerson(@PathVariable int page, @PathVariable int size) {
         return personService.findAllPerson(page, size);
+    }
+
+
+    @ApiOperation(value = "查询", notes = "分页查询")
+    @PostMapping("/delPerson/{id}")
+    public Object delete(@PathVariable String id) {
+        return personService.delete(id);
     }
 }

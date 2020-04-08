@@ -1,6 +1,5 @@
 package com.demo.web.controller;
 
-import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.text.NumberFormat;
@@ -9,10 +8,8 @@ import java.text.NumberFormat;
  * @author czhe
  * @version 1.0
  * @create 2019/6/20 15:12
- * @description 用户控制器
+ * @description 计算
  **/
-@Api(tags = "示例控制器")
-@RestController
 public class DemoController {
 
     public static void main(String[] args) {
@@ -22,7 +19,7 @@ public class DemoController {
         /*int[] array = {2, 1, 3, 6, 5, 4, 8, 7, 9};
         System.out.println("从数组中取2位数组合不重复的总数:" + combinationArray(array, 3));*/
 
-        System.out.println("两颗骰子摇两次至少出现一个一点的概率为:" + random(2, 2)+"%");
+        System.out.println("两颗骰子摇两次至少出现一个一点的概率为:" + random(2, 2) + "%");
 
     }
 

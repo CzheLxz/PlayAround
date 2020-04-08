@@ -1,7 +1,9 @@
 package com.demo.dao.mapper;
 
 import com.demo.dao.entity.Person;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -11,4 +13,7 @@ public interface PersonDao {
     int insert(Person person);
 
     List<Person> findAll();
+
+    int delete(String id);
+
 }
