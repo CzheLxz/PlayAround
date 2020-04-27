@@ -10,13 +10,13 @@ spring:
       jdbcurl: jdbc:mysql://127.0.0.1:3306/demo?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false&serverTimezone=UTC
       username: root
       password: 123456
-      driver-class-name: com.mysql.cj.jdbc.Driver
+      driver-class-name: com.mysql.jdbc.Driver
     slave:
       # 使用druid作为数据库连接池
       url: jdbc:mysql://127.0.0.1:3306/demoslave?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false&serverTimezone=UTC
       username: root
       password: 123456
-      driver-class-name: com.mysql.cj.jdbc.Driver
+      driver-class-name: com.mysql.jdbc.Driver
     read: get,select,count,list,query,find
     write: add,create,update,delete,remove,insert
 
@@ -63,7 +63,7 @@ spring:
 
 #mybatis
 mybatis:
-  mapper-locations: classpath:mapper/*.xml
+  mapper-locations: classpath:mappers/*.xml
   type-aliases-package: com.demo.dao.entity
   configuration.map-underscore-to-camel-case: true
 

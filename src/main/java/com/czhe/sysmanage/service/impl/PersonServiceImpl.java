@@ -1,7 +1,7 @@
 package com.czhe.sysmanage.service.impl;
 
-import com.czhe.sysmanage.entity.Person;
 import com.czhe.sysmanage.dao.PersonDao;
+import com.czhe.sysmanage.entity.Person;
 import com.czhe.sysmanage.service.PersonService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
 @Service
 public class PersonServiceImpl implements PersonService {
 
-    @Autowired
+    @Autowired(required = false)
     private PersonDao personDao;
 
     @Override
@@ -49,18 +49,18 @@ public class PersonServiceImpl implements PersonService {
 
     @Override
     public int delete(String id) {
-        return personDao.delete(id);
+        return personDao.deleteByPrimaryKey(id);
     }
 
     /**
      * 排序方法
      *
-     * @param orderby 自定义排序数组
+     * @param byArray 自定义排序数组
      * @param x
      * @param y
      * @return
      */
-    public int orderPerson(String[] orderby, String x, String y) {
+    public int orderPerson(String[] byArray, String x, String y) {
         /*//字段值存在空的情况 if(x == null && y != null){
             return 1;
         }else if(x !=null && y == null){
@@ -68,7 +68,7 @@ public class PersonServiceImpl implements PersonService {
         }else if(x == null && y == null){
             return -1;
         }else{}*/
-        for (String by : orderby) {
+        for (String by : byArray) {
             if (by.equals(x) || by.equals(y)) {
                 if (x.equals(y)) {
                     return 0;

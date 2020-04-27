@@ -33,8 +33,9 @@ import java.util.Map;
  * @create 2019/12/10 17:46
  * @description
  **/
+
 @Configuration
-@MapperScan("com.demo.dao.mapper")
+@MapperScan("com.czhe.sysmanage.dao")
 @EnableTransactionManagement
 public class DataSourceConfig {
 
@@ -85,11 +86,13 @@ public class DataSourceConfig {
     @Value("${spring.datasource.druid.max-pool-prepared-statement-per-connection-size}")
     private Integer maxPoolPreparedStatementPerConnectionSize;
 
+
     /**
      * 通过Spring JDBC 快速创建 DataSource
      *
      * @return
      */
+
     @Bean(name = "masterDataSource")
     @Qualifier("masterDataSource")
     @ConfigurationProperties(prefix = "spring.datasource.master")
@@ -97,11 +100,13 @@ public class DataSourceConfig {
         return DataSourceBuilder.create().build();
     }
 
+
     /**
      * 手动创建 DataSource
      *
      * @return
      */
+
     @Bean(name = "slaveDataSource")
     @Qualifier("slaveDataSource")
     @ConfigurationProperties(prefix = "spring.datasource.slave")

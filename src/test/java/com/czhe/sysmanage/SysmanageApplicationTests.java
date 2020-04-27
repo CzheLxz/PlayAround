@@ -24,8 +24,8 @@ import java.util.stream.IntStream;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-class SysmanageApplicationTests {
-    private static final Logger log = LoggerFactory.getLogger(SysmanageApplicationTests.class);
+class SysManageApplicationTests {
+    private static final Logger log = LoggerFactory.getLogger(SysManageApplicationTests.class);
 
     @Autowired
     MessageServiceContext messageServiceContext;
