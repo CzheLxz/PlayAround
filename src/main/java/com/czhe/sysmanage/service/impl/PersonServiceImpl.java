@@ -5,12 +5,15 @@ import com.czhe.sysmanage.entity.Person;
 import com.czhe.sysmanage.service.PersonService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
-import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * @author czhe
@@ -20,6 +23,8 @@ import java.util.stream.Collectors;
  **/
 @Service
 public class PersonServiceImpl implements PersonService {
+
+    private static final Logger log = LoggerFactory.getLogger(PersonServiceImpl.class);
 
     @Autowired(required = false)
     private PersonDao personDao;
@@ -33,23 +38,39 @@ public class PersonServiceImpl implements PersonService {
     public PageInfo<Person> findAllPerson(int page, int size) {
         PageHelper.startPage(page, size);
         List<Person> personList = personDao.findAll();
-        //先根据人员性别排序再根据职业排序再按薪水降序
+        /*//先根据人员性别排序再根据职业排序再按薪水降序
         String[] orderGender = new String[]{"male", "female", "unknown"};
-        String[] orderJob = new String[]{"python", "java", "php", "H5"};
+        String[] orderJob = new String[]{"python", "java", "C++","C","H5"};
         personList = personList.stream().sorted(
                 Comparator.comparing(Person::getGender, (x, y) -> {
                     return orderPerson(orderGender, x, y);
                 }).thenComparing(Comparator.comparing(Person::getJob, (x, y) -> {
                     return orderPerson(orderJob, x, y);
                 })).thenComparing(Comparator.comparing(Person::getSalary).reversed())
-        ).collect(Collectors.toList());//forEach(System.out::println)
+        ).collect(Collectors.toList());//forEach(System.out::println)*/
         PageInfo result = new PageInfo(personList);
         return result;
     }
 
+    @CacheEvict(value = "person",key = "#id")
     @Override
     public int delete(String id) {
+        log.info("根据ID 删除人员信息................");
         return personDao.deleteByPrimaryKey(id);
+    }
+
+    @Cacheable(value = "person",key = "#id")
+    @Override
+    public Person selectByPrimaryKey(String id) {
+        log.info("根据ID 查询人员信息................");
+        return personDao.selectByPrimaryKey(id);
+    }
+
+    @CachePut(value = "person",key = "#person.id")
+    @Override
+    public int updateByPrimaryKeySelective(Person person) {
+        log.info("根据ID 修改人员信息................");
+        return personDao.updateByPrimaryKeySelective(person);
     }
 
     /**

@@ -42,11 +42,13 @@ spring:
       pool-prepared-statements: false
       max-pool-prepared-statement-per-connection-size: 20
   # redis
+  cache:
+    type: redis
   redis:
-    host: 127.0.0.1
+    host: localhost
     port: 6379
     password: root
-    timeout: 10000
+    timeout: 60000
     # Redis默认情况下有16个分片 默认是 0
     database: 0
     # 连接池最大连接数（使用负值表示没有限制） 默认 8

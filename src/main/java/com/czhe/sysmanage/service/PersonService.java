@@ -11,4 +11,10 @@ public interface PersonService {
     PageInfo<Person> findAllPerson(int page, int size);
 
     int delete(String id);
+
+    Person selectByPrimaryKey(String id);
+
+    int updateByPrimaryKeySelective(Person person);
+
+
 }

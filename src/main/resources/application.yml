@@ -3,7 +3,7 @@ spring:
   profiles:
     active: dev
 logging:
-  file: log/demo.log
+  file: log/sysmanager.log
   level:
     com:
       demo:
