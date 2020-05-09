@@ -85,11 +85,11 @@ class SysManageApplicationTests {
     }
 
     @Test
-    public void testCache(){
-        Person person = new Person("9996550670824321b9b8cde2c3e3ee74","keven","Product","male",32,20000);
+    public void testCache() {
+        Person person = new Person("9996550670824321b9b8cde2c3e3ee74", "keven", "Product", "male", 32, 20000);
         personService.updateByPrimaryKeySelective(person);
-        log.info(personService.selectByPrimaryKey("9996550670824321b9b8cde2c3e3ee74").toString());
-        person.setId("e62d6fbc6661434d86bc61ecd3b31b3d");
+        final Person ps = personService.selectByPrimaryKey("9996550670824321b9b8cde2c3e3ee74");
+        log.info("cache person >>>>>>>>>>>>>> " + ps.toString());
     }
 
     class RunThread implements Runnable {

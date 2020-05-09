@@ -14,7 +14,7 @@ public interface PersonService {
 
     Person selectByPrimaryKey(String id);
 
-    int updateByPrimaryKeySelective(Person person);
+    Person updateByPrimaryKeySelective(Person person);
 
 
 }

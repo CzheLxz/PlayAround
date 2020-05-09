@@ -2,14 +2,16 @@ package com.czhe.sysmanage.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.ToString;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
-@ToString
-@AllArgsConstructor
+
 @Data
-public class Person  implements Serializable {
+@NoArgsConstructor
+@AllArgsConstructor
+public class Person implements Serializable {
+
     private static final long serialVersionUID = -5033892775591043830L;
 
     private String id;

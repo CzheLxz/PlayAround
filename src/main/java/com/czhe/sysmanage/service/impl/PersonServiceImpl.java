@@ -68,9 +68,10 @@ public class PersonServiceImpl implements PersonService {
 
     @CachePut(value = "person",key = "#person.id")
     @Override
-    public int updateByPrimaryKeySelective(Person person) {
+    public Person updateByPrimaryKeySelective(Person person) {
         log.info("根据ID 修改人员信息................");
-        return personDao.updateByPrimaryKeySelective(person);
+        personDao.updateByPrimaryKeySelective(person);
+        return person;
     }
 
     /**
