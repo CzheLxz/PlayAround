@@ -18,7 +18,6 @@ public class RabbitConfig {
 
     @Bean
     public Queue manualBookQueue() {
-        // 第一个是 QUEUE 的名字,第二个是消息是否需要持久化处理
         return new Queue(MANUAL_BOOK_QUEUE, true);
     }
 }

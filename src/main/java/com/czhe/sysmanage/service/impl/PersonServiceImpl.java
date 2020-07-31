@@ -38,8 +38,8 @@ public class PersonServiceImpl implements PersonService {
     public PageInfo<Person> findAllPerson(int page, int size) {
         PageHelper.startPage(page, size);
         List<Person> personList = personDao.findAll();
-        /*//先根据人员性别排序再根据职业排序再按薪水降序
-        String[] orderGender = new String[]{"male", "female", "unknown"};
+        //先根据人员性别排序再根据职业排序再按薪水降序
+       /* String[] orderGender = new String[]{"male", "female", "unknown"};
         String[] orderJob = new String[]{"python", "java", "C++","C","H5"};
         personList = personList.stream().sorted(
                 Comparator.comparing(Person::getGender, (x, y) -> {

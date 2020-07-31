@@ -84,6 +84,13 @@ pagehelper:
     username: admin
     password: 123456
 
+  #格式化所有java.util.Date类型字段
+  jackson:
+    #时区，默认为格林尼治时间，即少8小时，所以我们需要+8
+    time-zone: GMT+8
+    #时间格式转换定义
+    date-format: yyyy-MM-dd HH:mm:ss
+
 
 
 

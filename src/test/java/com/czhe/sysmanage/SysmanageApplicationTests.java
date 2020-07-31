@@ -1,5 +1,6 @@
 package com.czhe.sysmanage;
 
+import com.alibaba.fastjson.JSONObject;
 import com.czhe.sysmanage.entity.MSG_TYPE;
 import com.czhe.sysmanage.entity.MessageInfo;
 import com.czhe.sysmanage.entity.Person;
@@ -7,6 +8,7 @@ import com.czhe.sysmanage.entity.User;
 import com.czhe.sysmanage.listener.MessageServiceContext;
 import com.czhe.sysmanage.service.MessageService;
 import com.czhe.sysmanage.service.PersonService;
+import com.jayway.jsonpath.JsonPath;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -20,6 +22,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.io.Serializable;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 import java.util.UUID;
 import java.util.concurrent.ExecutorService;
@@ -126,6 +129,36 @@ class SysManageApplicationTests {
             str += (char) ((int) (Math.random() * 26) + 'a');
         }
         return str;
+    }
+
+    @Test
+    public void getJsonValue(){
+        JSONObject json = new JSONObject();
+        JSONObject result = new JSONObject();
+        JSONObject data = new JSONObject();
+        JSONObject person = new JSONObject();
+        JSONObject manager = new JSONObject();
+        person.put("name","zjc");
+        person.put("age","22");
+        person.put("height",160);
+        manager.put("name","czhe");
+        manager.put("age","23");
+        manager.put("height",180);
+        data.put("person",person);
+        data.put("manager",manager);
+        result.put("code","100");
+        result.put("data",data);
+        json.put("result",result);
+        System.out.println(json.toJSONString());
+        List<String> cityName = JsonPath.read(json, "$..name");//获取所有name节点
+        Object czhe = JsonPath.read(json, "$..[?(@.name == 'czhe')]");//根据name获取值
+        Object zjc = JsonPath.read(json, "$..[?(@.height < 170)]");//根据height获取值
+        cityName.stream().forEach(name ->{
+            System.out.println(name);
+        });
+        System.out.println(czhe.toString());
+        System.out.println(zjc.toString());
+
     }
 
 
