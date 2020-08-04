@@ -1,7 +1,5 @@
 package com.czhe.sysmanage.listener;
 
-import com.alibaba.fastjson.JSONObject;
-import com.czhe.sysmanage.config.JobEntity;
 import com.czhe.sysmanage.service.QuartzService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,8 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.event.ContextRefreshedEvent;
-
-import java.util.UUID;
 
 /**
  * @author czhe
@@ -28,7 +24,7 @@ public class ApplicationStartListener implements ApplicationListener<ContextRefr
 
     @Override
     public void onApplicationEvent(ContextRefreshedEvent contextRefreshedEvent) {
-        JobEntity jobEntity = new JobEntity();
+        /*JobEntity jobEntity = new JobEntity();
         jobEntity.setJobId(UUID.randomUUID().toString().replaceAll("-", ""));
         jobEntity.setClassName("com.czhe.sysmanage.taskJob.MyJobAuto");
         jobEntity.setCronExpression("0 0/5 * * * ?");//设置为五分钟执行一次
@@ -43,7 +39,7 @@ public class ApplicationStartListener implements ApplicationListener<ContextRefr
         jobEntity.setData(jsonObject);
         quartzService.addJob(jobEntity);
         log.info("--------触发定时任务开始执行........");
-        log.info("--------application启动完毕--------");
+        log.info("--------application启动完毕--------");*/
 
     }
 }
