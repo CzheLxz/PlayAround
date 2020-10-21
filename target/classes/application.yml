@@ -1,0 +1,11 @@
+spring:
+  # 运行环境 dev:开发环境|test:测试环境|prod:生产环境
+  profiles:
+    active: dev
+logging:
+  file: log/sysmanager.log
+  level:
+    com:
+      demo:
+        dao: debug
+  #swagger地址: localhost:8090/demo/swagger-ui.html#
