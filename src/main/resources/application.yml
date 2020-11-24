@@ -3,9 +3,10 @@ spring:
   profiles:
     active: dev
 logging:
-  file: log/sysmanager.log
+  file:
+    name: log/sysmanager.log
   level:
     com:
-      demo:
-        dao: debug
+      czhe:
+        sysmanage: debug
   #swagger地址: localhost:8090/demo/swagger-ui.html#

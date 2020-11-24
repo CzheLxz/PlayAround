@@ -3,6 +3,7 @@ package com.czhe.sysmanage.controller;
 import com.alibaba.fastjson.JSONObject;
 import com.czhe.sysmanage.config.JobEntity;
 import com.czhe.sysmanage.service.QuartzService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
  * @create 2020/8/4 15:10
  * @description
  **/
+@Api(tags = "Quartz定时任务接口")
 @RestController
 @RequestMapping("/quartz")
 public class QuartzController {

@@ -2,12 +2,14 @@ package com.czhe.sysmanage.controller;
 
 import com.czhe.sysmanage.config.RabbitConfig;
 import com.czhe.sysmanage.entity.Book;
+import io.swagger.annotations.Api;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+@Api(tags = "RabbitMq接口")
 @RestController
 @RequestMapping("/books")
 public class BookController {

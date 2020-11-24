@@ -92,6 +92,13 @@ pagehelper:
     date-format: yyyy-MM-dd HH:mm:ss
 
 
+jodconverter:
+  local:
+    enabled: true
+    office-home: C:\Program Files (x86)\OpenOffice 4
+    max-tasks-per-process: 10
+    port-numbers: 8100
+
 
 
 
