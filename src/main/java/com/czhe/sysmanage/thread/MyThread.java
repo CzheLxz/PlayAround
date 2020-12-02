@@ -4,7 +4,6 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
-import java.util.concurrent.FutureTask;
 
 /**
  * @author czhe
@@ -14,13 +13,63 @@ import java.util.concurrent.FutureTask;
  **/
 @Slf4j
 public class MyThread {
+
+    private static int count = 0;
+
+    private static Object lock = new Object();
+
+    public static native void yield();
+
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        new T().start();
+      /*  new T().start();
         new Thread(() -> log.info("我是Runnable的lambda简化后的任务")).start();
         new R().run();
         FutureTask<String> target = new FutureTask<>(new C());
         new Thread(target).start();
         log.info(target.get());
+
+        Thread t1 = new Thread(() -> {
+            for (int i = 0; i < 5000; i++) {
+                synchronized (lock) {
+                    count++;
+                }
+            }
+        });
+
+        Thread t2 = new Thread(() -> {
+            for (int i = 5000; i > 0; i--) {
+                synchronized (lock) {
+                    count--;
+                }
+            }
+        });
+        t1.start();
+        t2.start();
+        t1.join();
+        t2.join();
+        System.out.println("count: " + count);*/
+
+        Runnable r1 = () -> {
+            int cou = 0;
+            for (; ; ) {
+                log.info("------------------1 " + cou++);
+            }
+        };
+        Runnable r2 = () -> {
+            int cou = 0;
+            for (; ; ) {
+                //Thread.yield();
+                log.info("       ------------------2 " + cou++);
+            }
+        };
+
+        Thread t1 = new Thread(r1, "t1");
+        Thread t2 = new Thread(r2, "t2");
+        t1.setPriority(Thread.NORM_PRIORITY);
+        t2.setPriority(Thread.MAX_PRIORITY);
+        t1.start();
+        t2.start();
+
 
     }
 

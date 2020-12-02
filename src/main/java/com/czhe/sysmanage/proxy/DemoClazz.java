@@ -16,9 +16,8 @@ public class DemoClazz {
     public static DemoClazz getInstance() {
         if (instance == null) {
             synchronized (DemoClazz.class) {
-                if (instance == null) {
+                if (instance == null)
                     instance = new DemoClazz();
-                }
             }
         }
         return instance;
