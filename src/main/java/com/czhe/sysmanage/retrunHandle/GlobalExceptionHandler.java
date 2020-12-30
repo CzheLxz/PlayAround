@@ -48,7 +48,7 @@ public class GlobalExceptionHandler {
     @ResponseBody
     public ResultBody exceptionHandler(HttpServletRequest request, NullPointerException e) {
         log.error("发生空指针异常!原因为: {}", e.getMessage());
-        return ResultBody.error(ErrorMsg.BODY_NOT_MATCH);
+        return ResultBody.error(ErrorMsg.NULL_POINTER);
     }
 
     /**
@@ -62,7 +62,7 @@ public class GlobalExceptionHandler {
     @ResponseBody
     public ResultBody exceptionHandler(HttpServletRequest req, HttpRequestMethodNotSupportedException e) {
         log.error("发生请求方法不支持异常！原因是:", e);
-        return ResultBody.error(ErrorMsg.REQUEST_METHOD_SUPPORT_ERROR);
+        return ResultBody.error(ErrorMsg.METHOD_SUPPORT_ERROR);
     }
 
     /**
@@ -76,7 +76,7 @@ public class GlobalExceptionHandler {
     @ResponseBody
     public ResultBody exceptionHandler3(HttpServletRequest request, Exception e) {
         log.error("参数为空！原因是:", e);
-        return ResultBody.error(ErrorMsg.SIGNATURE_NOT_MATCH.getResultCode(), e.getMessage());
+        return ResultBody.error(ErrorMsg.ILLEGAL_ARGUMENT.getResultCode(), e.getMessage());
     }
 
 
@@ -105,7 +105,7 @@ public class GlobalExceptionHandler {
     @ResponseBody
     public ResultBody exceptionHandler(HttpServletRequest request, NumberFormatException e) {
         log.error("类型转换异常！原因是:", e);
-        return ResultBody.error(ErrorMsg.NUMBER_PARSE_ERROR);
+        return ResultBody.error(ErrorMsg.UNSUPPORTED_TYPE);
     }
 
     /**
@@ -119,7 +119,7 @@ public class GlobalExceptionHandler {
     @ResponseBody
     public ResultBody exceptionHandler(HttpServletRequest req, Exception e) {
         log.error("未知异常！原因是:", e);
-        return ResultBody.error(ErrorMsg.INTERNAL_SERVER_ERROR);
+        return ResultBody.error(ErrorMsg.SERVER_ERROR);
     }
 
 

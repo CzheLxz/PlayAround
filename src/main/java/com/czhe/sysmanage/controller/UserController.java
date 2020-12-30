@@ -75,7 +75,7 @@ public class UserController {
 
     @GetMapping("/testError")
     public ResultBody testError() {
-        return ResultBody.error("099", "错误错误错误");
+        return ResultBody.error("502", "错误网关");
     }
 
     @GetMapping("/hello")
@@ -97,7 +97,7 @@ public class UserController {
 
     @ApiOperation(value = "在线预览文档", notes = "转换文档为PDF格式预览")
     @ApiImplicitParam(name = "filePath", value = "文件路径", required = true, dataType = "String", paramType = "query")
-    @PostMapping("/displayDocumentOnline")
+    @GetMapping("/displayDocumentOnline")
     public void displayDocumentOnline(@RequestParam("filePath") String filePath, HttpServletResponse response) {
         try {
             File file = new File(filePath);//需要转换的文件

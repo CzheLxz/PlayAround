@@ -49,7 +49,7 @@ public class MyThread {
         t2.join();
         System.out.println("count: " + count);*/
 
-        Runnable r1 = () -> {
+        /*Runnable r1 = () -> {
             int cou = 0;
             for (; ; ) {
                 log.info("------------------1 " + cou++);
@@ -68,10 +68,39 @@ public class MyThread {
         t1.setPriority(Thread.NORM_PRIORITY);
         t2.setPriority(Thread.MAX_PRIORITY);
         t1.start();
-        t2.start();
+        t2.start();*/
+       /* Thread thread = new Thread(() -> {
+            while (true) {
+                System.out.println("------------------");
+                try {
+                    TimeUnit.SECONDS.sleep(1);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+        // 设为true表示守护线程，当主线程结束后，守护线程也结束。
+        // 默认是false，当主线程结束后，thread继续运行，程序不停止
+        //thread.setDaemon(true);
+        thread.start();
+        thread.sleep(3000);
+        thread.currentThread();*/
+        //log.info(".........................结束");
+        Thread t = new Thread(() -> {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println(">>>>>>>>>>>>>>>>>>>>>");
+        });
+        t.start();
+        t.join();
+        log.info("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
 
 
     }
+
 
 }
 
