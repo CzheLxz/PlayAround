@@ -3,7 +3,7 @@ package com.czhe.sysmanage.controller;
 import com.czhe.sysmanage.entity.Player;
 import com.czhe.sysmanage.retrunHandle.ResultBody;
 import io.swagger.annotations.Api;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -84,7 +84,7 @@ public class DouDIZhuController {
     }
 
 
-    @PostMapping("/StartGame")
+    @GetMapping("/startGame")
     public ResultBody StartGame() {
         initializeCards();
         licenSing();
