@@ -21,7 +21,9 @@ import java.lang.reflect.Method;
 public class ParamValidAop {
 
 
-    //切入点
+    /**
+     * 切入点
+     */
     @Pointcut("execution(public * com.czhe.sysmanage.controller..*.*(..))")
     public void checkParam() {
     }
@@ -30,7 +32,12 @@ public class ParamValidAop {
     public void doBefore(JoinPoint joinPoint) {
     }
 
-    //检查参数是否为空
+    /**
+     * 检查参数是否为空
+     * @param pjp
+     * @return
+     * @throws Throwable
+     */
     @Around("checkParam()")
     public Object doAround(ProceedingJoinPoint pjp) throws Throwable {
         MethodSignature signature = ((MethodSignature) pjp.getSignature());
@@ -66,10 +73,13 @@ public class ParamValidAop {
 
     }
 
-    //在切入点返回内容之后切入内容(用来对处理返回值做一些加工处理)
-    @AfterReturning("checkParam()")
+    /**
+     * 在切入点返回内容之后切入内容(用来对处理返回值做一些加工处理)
+     * @param joinPoint
+     */
+    /*@AfterReturning("checkParam()")
     public void doAfterReturning(JoinPoint joinPoint) {
-    }
+    }*/
 
     /**
      * 参数非空校验 如果为空抛出ParamIsNullException异常
@@ -79,7 +89,7 @@ public class ParamValidAop {
      * @param parameterType
      */
     private void paramIsNull(String paramName, Object value, String parameterType) {
-        if (value == null || "".equals(value.toString().trim())) {
+        if (value == null || StringUtils.isBlank(value.toString().trim())) {
             throw new ParamIsNullException(paramName, parameterType, "参数为空");
         }
     }

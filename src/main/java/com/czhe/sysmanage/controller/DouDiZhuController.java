@@ -21,7 +21,7 @@ import java.util.List;
 @Api(tags = "斗地主接口")
 @RestController
 @RequestMapping("/ddz")
-public class DouDIZhuController {
+public class DouDiZhuController {
 
     private static List<String> aPairCards;
 
@@ -29,7 +29,9 @@ public class DouDIZhuController {
 
     private static List<Player> allPlayer;
 
-    //初始化一副扑克牌
+    /**
+     * 初始化一副扑克牌
+     */
     private static void initializeCards() {
         String[] colors = {"♠", "♥", "♦", "♣"};
         String[] numbers = {"2", "A", "K", "Q", "J", "10", "9", "8", "7", "6", "5", "4", "3"};
@@ -45,13 +47,16 @@ public class DouDIZhuController {
         master = (int) (Math.random() * 52 + 3);
     }
 
-    //发牌
+    /**
+     * 发牌
+     */
     private static void licenSing() {
         //初始化三位玩家
         Player playerA = new Player("玩家A", 0, new ArrayList<>(), 1000);
         Player playerB = new Player("玩家B", 0, new ArrayList<>(), 1000);
         Player playerC = new Player("玩家C", 0, new ArrayList<>(), 1000);
-        List<String> masterCard = new ArrayList<>();//地主牌
+        //地主牌
+        List<String> masterCard = new ArrayList<>();
         for (int i = 0; i < aPairCards.size(); i++) {
             if (i < 3) {
                 masterCard.add(aPairCards.get(i));

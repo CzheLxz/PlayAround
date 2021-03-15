@@ -1,7 +1,9 @@
 package com.czhe.sysmanage.controller;
 
 import com.czhe.sysmanage.service.SseService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,6 +19,7 @@ import java.util.Map;
  * @description 服务器发送事件
  **/
 
+@Api(tags = "ServerSentEvent")
 @RequestMapping("/sse")
 @RestController
 public class ServerSentEventsController {
@@ -24,18 +27,18 @@ public class ServerSentEventsController {
     @Autowired
     private SseService sseService;
 
-    @RequestMapping("/start")
+    @PostMapping("/start")
     public SseEmitter start(@RequestParam String clientId) {
         return sseService.start(clientId);
     }
 
 
-    @RequestMapping("/end")
+    @PostMapping("/end")
     public String close(@RequestParam String clientId) {
         return sseService.close(clientId);
     }
 
-    @RequestMapping("/send")
+    @PostMapping("/send")
     public String send(@RequestParam String clientId) {
         Map<String, Object> msg = new HashMap<>();
         msg.put("code", "200");

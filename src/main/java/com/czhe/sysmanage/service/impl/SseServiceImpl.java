@@ -4,15 +4,16 @@ import com.czhe.sysmanage.retrunHandle.BizException;
 import com.czhe.sysmanage.service.SseService;
 import com.czhe.sysmanage.session.SseSession;
 import com.czhe.sysmanage.thread.HeartBeatTask;
+import org.apache.commons.lang3.concurrent.BasicThreadFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 
 import java.util.Date;
-import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
+import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -29,7 +30,9 @@ public class SseServiceImpl implements SseService {
     /**
      * 发送心跳线程池
      */
-    private static ScheduledExecutorService heartbeatExecutors = Executors.newScheduledThreadPool(8);
+    private static ScheduledExecutorService heartbeatExecutors = new ScheduledThreadPoolExecutor(8,
+            new BasicThreadFactory.
+                    Builder().namingPattern("example-schedule-pool-%d").daemon(true).build());
 
 
     /**
@@ -40,7 +43,8 @@ public class SseServiceImpl implements SseService {
      */
     @Override
     public SseEmitter start(String clientId) {
-        SseEmitter emitter = new SseEmitter(30_000L);//设置30秒超时
+        //设置30秒超时
+        SseEmitter emitter = new SseEmitter(30_000L);
         log.info("Msg: SseConnect| EmitterHash: {} | ID: {} | Date: {}", emitter.hashCode(), clientId, new Date());
         SseSession.add(clientId, emitter);
         final ScheduledFuture<?> future = heartbeatExecutors.scheduleAtFixedRate(new HeartBeatTask(clientId), 0, 10, TimeUnit.SECONDS);
@@ -70,7 +74,9 @@ public class SseServiceImpl implements SseService {
     @Override
     public String close(String clientId) {
         log.info("MSG: SseConnectClose | ID: {} | Date: {}", clientId, new Date());
-        if (SseSession.del(clientId)) return "succeed";
+        if (SseSession.del(clientId)) {
+            return "succeed";
+        }
         return "error";
     }
 }

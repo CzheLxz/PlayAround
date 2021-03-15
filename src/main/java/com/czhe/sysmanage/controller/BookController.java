@@ -9,6 +9,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * @author czhe
+ * @version 1.0
+ * @create 2021/3/15 15:05
+ * @description RabbitMq
+ **/
 @Api(tags = "RabbitMq接口")
 @RestController
 @RequestMapping("/books")
