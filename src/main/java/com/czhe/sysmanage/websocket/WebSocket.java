@@ -146,7 +146,6 @@ public class WebSocket {
             logger.info("当前用户ID不存在!" + TouserId);
         }
         for (WebSocket item : clients.values()) {
-            //    System.out.println("在线人员名单  : "+item.userId.toString());
             if (item.userId.equals(TouserId)) {
                 item.session.getAsyncRemote().sendText(message);
                 break;

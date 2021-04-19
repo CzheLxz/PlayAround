@@ -30,7 +30,7 @@ import java.util.concurrent.Executors;
 import java.util.stream.IntStream;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class SysManageApplicationTests {
     private static final Logger log = LoggerFactory.getLogger(SysManageApplicationTests.class);
 

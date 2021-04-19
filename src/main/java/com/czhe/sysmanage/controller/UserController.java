@@ -12,6 +12,7 @@ import org.jodconverter.DocumentConverter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.Resource;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
@@ -31,7 +32,7 @@ public class UserController {
     @Autowired
     private WebSocket webSocket;
 
-    @Autowired
+    @Resource
     private DocumentConverter converter;
 
 
