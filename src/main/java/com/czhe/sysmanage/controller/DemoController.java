@@ -1,9 +1,5 @@
 package com.czhe.sysmanage.controller;
 
-import com.czhe.sysmanage.entity.Person;
-import com.czhe.sysmanage.util.ObjectCopy;
-import org.springframework.beans.BeanUtils;
-
 import java.text.NumberFormat;
 
 /**
@@ -16,15 +12,14 @@ public class DemoController {
 
     public static void main(String[] args) throws Exception {
 
-        //System.out.println(Calculation(5));
-        //System.out.println("数值3-7之间取2位数组合不重复的总数:" + combination(3, 7, 2));
-        //int[] array = {2, 1, 3, 6, 5, 4, 8, 7, 9};
-        //System.out.println("从数组中取2位数组合不重复的总数: " + combinationArray(array, 2));
-        //System.out.println("从1加到n的和为: " + accumulate(100));
-        /*System.out.println("两颗骰子摇两次至少出现一个一点的概率为:" + random(2, 2) + "%");*/
-        /*从1加到N*/
+        /*System.out.println(Calculation(5));
+        System.out.println("数值3-7之间取2位数组合不重复的总数:" + combination(3, 7, 2));
+        int[] array = {2, 1, 3, 6, 5, 4, 8, 7, 9};
+        System.out.println("从数组中取2位数组合不重复的总数: " + combinationArray(array.length, 2));
+        System.out.println("从1加到n的和为: " + accumulate(100));
+        System.out.println("两颗骰子摇两次至少出现一个一点的概率为:" + random(2, 2) + "%");*/
 
-        Person personA = new Person("A001", "czhe", "JAVA", "male", 22, 1000000000);
+        /*Person personA = new Person("A001", "czhe", "JAVA", "male", 22, 1000000000);
         Person personB = new Person();
         Person personC = new Person();
         System.out.println(personB.toString());
@@ -32,7 +27,7 @@ public class DemoController {
         ObjectCopy.copyProperties(personA, personB, "name");
         BeanUtils.copyProperties(personA, personC, "id");
         System.out.println(personB.toString());
-        System.out.println(personC.toString());
+        System.out.println(personC.toString());*/
 
 
     }
@@ -103,16 +98,16 @@ public class DemoController {
     /**
      * 从数组选取位数组合不重复情况下的总数
      *
-     * @param array 数组
+     * @param length 长度
      * @param group 位数
      * @return
      */
-    public static int combinationArray(int[] array, int group) {
-        if (array.length < group) {
+    public static int combinationArray(int length, int group) {
+        if (length < group) {
             //范围不够取group位数
             return -1;
         }
-        int max = array.length;
+        int max = length;
         int min = 1;
         return combinationUtil(min, max, group);
     }
