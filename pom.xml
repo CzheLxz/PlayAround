@@ -36,7 +36,7 @@
         <aspectj.version>1.9.6</aspectj.version>
         <mybatis-generator.version>1.3.7</mybatis-generator.version>
         <jodconverter.version>4.2.2</jodconverter.version>
-        <commons-io.version>2.6</commons-io.version>
+        <commons-io.version>2.7</commons-io.version>
     </properties>
 
 
