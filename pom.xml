@@ -28,7 +28,7 @@
         <lang3.version>3.9</lang3.version>
         <springboot.version>2.2.6.RELEASE</springboot.version>
         <pool2.version>2.8.0</pool2.version>
-        <context-support.version>5.2.2.RELEASE</context-support.version>
+        <context-support.version>5.2.5.RELEASE</context-support.version>
         <mysql.version>8.0.21</mysql.version>
         <quartz.version>2.3.2</quartz.version>
         <fastjson.version>1.2.68</fastjson.version>

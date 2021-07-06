@@ -1,6 +1,7 @@
 package com.czhe.sysmanage.controller;
 
 import java.text.NumberFormat;
+import java.util.*;
 
 /**
  * @author czhe
@@ -10,26 +11,47 @@ import java.text.NumberFormat;
  **/
 public class DemoController {
 
-    public static void main(String[] args) throws Exception {
+    static Map<Integer, String> allValue = new HashMap<>();
+    static List<Integer> result = new ArrayList<>();
 
-        /*System.out.println(Calculation(5));
-        System.out.println("数值3-7之间取2位数组合不重复的总数:" + combination(3, 7, 2));
-        int[] array = {2, 1, 3, 6, 5, 4, 8, 7, 9};
-        System.out.println("从数组中取2位数组合不重复的总数: " + combinationArray(array.length, 2));
-        System.out.println("从1加到n的和为: " + accumulate(100));
-        System.out.println("两颗骰子摇两次至少出现一个一点的概率为:" + random(2, 2) + "%");*/
+    public static void main(String[] args) {
+        int[] a = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20};
+        int k = 12;
+        findVal(a, k);
+        System.out.println(result);
+    }
 
-        /*Person personA = new Person("A001", "czhe", "JAVA", "male", 22, 1000000000);
-        Person personB = new Person();
-        Person personC = new Person();
-        System.out.println(personB.toString());
-        System.out.println(personC.toString());
-        ObjectCopy.copyProperties(personA, personB, "name");
-        BeanUtils.copyProperties(personA, personC, "id");
-        System.out.println(personB.toString());
-        System.out.println(personC.toString());*/
+    /**
+     * 给定一个整数数组nums和一个整数目标值target 在该数组中找出两个差值为target
+     *
+     * @param nums
+     * @param target
+     * @return
+     */
+    public static void findVal(int[] nums, int target) {
+        for (int i = 0; i < nums.length; i++) {
+            int k;
+            if (nums[i] > target) {
+                k = nums[i] - target;
+                allValue.put(i, nums[i] + " " + k);
+            } else {
+                k = target - nums[i];
+                allValue.put(i, (nums[i] + " " + k));
+            }
 
-
+        }
+        for (int i = 0; i < nums.length; i++) {
+            for (Integer j : allValue.keySet()) {
+                if (j == i)
+                    continue;
+                int k = Integer.valueOf(allValue.get(j).split(" ")[1]);
+                if (k == nums[i]) {
+                    int l = Integer.valueOf(allValue.get(j).split(" ")[0]);
+                    result.add(l);
+                    result.add(nums[i]);
+                }
+            }
+        }
     }
 
     /**
@@ -38,11 +60,11 @@ public class DemoController {
      * @param n
      * @return
      */
-    public static int Calculation(int n) {
+    public static int calculation(int n) {
         if (n == 1) {
             return n;
         }
-        return n + Calculation(n - 1);
+        return n + calculation(n - 1);
     }
 
 
@@ -96,23 +118,6 @@ public class DemoController {
     }
 
     /**
-     * 从数组选取位数组合不重复情况下的总数
-     *
-     * @param length 长度
-     * @param group 位数
-     * @return
-     */
-    public static int combinationArray(int length, int group) {
-        if (length < group) {
-            //范围不够取group位数
-            return -1;
-        }
-        int max = length;
-        int min = 1;
-        return combinationUtil(min, max, group);
-    }
-
-    /**
      * 计算
      *
      * @param min
@@ -134,7 +139,7 @@ public class DemoController {
     }
 
     /**
-     * 累加从1加到n
+     * 数据公式累加
      *
      * @param n
      * @return
